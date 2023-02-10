@@ -1,8 +1,26 @@
 import React from 'react';
+import Image from 'next/image';
+import { MagnifyingGlassIcon } from '@heroicons/react/24/solid';
 
 const Navbar = () => {
   return (
-    <div className="container mx-auto bg-indigo-500 ">Navbar</div>
+    <div className="container mx-auto flex flex-row justify-between p-4">
+      <div>
+        <Image
+          src={'/image/logo.svg'}
+          width={170}
+          height={40}
+          alt="logo"
+        />
+      </div>
+
+      <div className="flex flex-row gap-4 items-center">
+        <MagnifyingGlassIcon className="h-6 w-6 text-blue-500" />
+        <div className="w-24 h-10 bg-redbrand flex items-center justify-center rounded-sm">
+          Signin
+        </div>
+      </div>
+    </div>
   );
 };
 

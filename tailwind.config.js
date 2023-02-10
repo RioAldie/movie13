@@ -10,6 +10,9 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    colors: {
+      redbrand: '#F41B3B',
+    },
   },
   plugins: [],
 };
