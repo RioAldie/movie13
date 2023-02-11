@@ -9,9 +9,10 @@ module.exports = {
     './src/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
-    colors: {
-      redbrand: '#F41B3B',
+    extend: {
+      backgroundImage: {
+        'hero-pattern': "url('/image/BG.png')",
+      },
     },
   },
   plugins: [],
